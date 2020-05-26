@@ -6,7 +6,7 @@ const Memories = ({id, loadMemories, memories, addMemories, logout, history, del
 
     const handleLogout = () => {
         logout()
-        history.push('/');
+        history.push('/login');
         localStorage.removeItem('token');
         localStorage.removeItem('user');
     }
